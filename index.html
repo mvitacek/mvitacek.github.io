@@ -1,69 +1,158 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home Page Pickle Club</title>
-
-	<!-- Fonts -->
-	<link rel="stylesheet" href="styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-	
-	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buzzfeed Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="top">
-		<div id="topbar">
-			<div id="text1">We welcome everyone, especially pickle lovers</div>
-		</div>
-		<div id="header">
-			<img src="images/logo.png" id="logo">
-			<h1 id="title">Parker Pickle Club</h1>
-			<div class="dropdown">
-				<button class="dropbtn"><i class="fa fa-bars fa-lg"></i></button>
-  				<div class="dropdown-content">
-    				<a href="index.html">Home</a>
-    				<a href="pages/leadership.html" target="_blank">Leadership</a>
-    				<a href="pages/events.html" target="_blank">Events</a>
-  				</div>
-			</div>
-		</div>
-	</div>
-	<div class="middle">
-		<img src="images/pickle2.jpg" id="homeimg">
-		<div id="mission">
-			<h1>Our Mission:</h1>
-			<div id="text2">
-				<p>At the Pickle Club, we take pickles seriously — but not too seriously! Our mission is to bring people together through the shared joy of brine, crunch, and curiosity. Whether you’re a dill devotee, a sweet pickle fan, or a newcomer still deciding where you stand in the great cucumber debate, you’ll find a home here.<p>
-				<p>We celebrate all things pickled — from cucumbers to carrots, kimchi to kraut — and we’re dedicated to learning, laughing, and tasting our way through every tangy adventure. Through events, collaborations, and maybe the occasional pickle-themed party, we’re spreading the message that good pickles (and good company) make life a little zestier.</p>
-				<p>Because when life gets tough, we say: just keep it crisp.</p>
-			</div>
-		</div>
-	</div>
-	<div class="bottom">
-		<div id="footer">
-			<h1 id="bottomtitle">Parker Pickle Club</h1>
-			<h2 id="connect">Connect with us!</h2>
-			<div>
-				<ul id="contact">
-					<li>email@fwparker.org</li>
-					<li>email@fwparker.org</li>
-					<li>email@fwparker.org</li>
-					<li>email@fwparker.org</li>
-				</ul>
-			</div>
-			<a><i class="fa fa-brands fa-instagram"></i></a>
-		</div>
-		<div id="bottombar">
-			© 2025 Parker Pickle Club | Chicago, IL
-		</div>
-	</div>
+    <div class="header">
+        <h1>Build your perfect day and I'll tell you what 2025 trend you are</h1>
+    </div>
+    <!-- Radio buttons for programmingLanguage -->
+    <!-- breakfast -->
+    <p class="question">You just woke up from a good 9 hour sleep, which breakfast are you feasting on?</p>
+    <div class="option">
+        <div class="container">
+            <div class="container1">
+                <input type="radio" id="breakfastone" name="breakfastChoice">
+                <label for="breakfastone">Breakfast One</label>
+                <img src="imgs/breakfast1.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="breakfasttwo" name="breakfastChoice">
+                <label for="breakfasttwo">Breakfast Two</label>
+                <img src="imgs/breakfast2.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="breakfastthree" name="breakfastChoice">
+                <label for="breakfastthree">Breakfast Three</label>
+                <img src="imgs/breakfast3.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="breakfastfour" name="breakfastChoice">
+                <label for="breakfastfour">Breakfast Four</label>
+                <img src="imgs/breakfast4.jpg" class="img">
+            </div>
+        </div>
+    </div>
+    <!-- first activity -->
+    <p class="question">School/work just called and you got the day off! How will you spend the morning?</p>
+    <div class="option">
+        <div class="container">
+            <div class="container1">
+                <input type="radio" id="read" name="activityOne">
+                <label for="read">Read a book</label>
+                <img src="imgs/read.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="game" name="activityOne">
+                <label for="game">Play games</label>
+                <img src="imgs/game.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="hangout" name="activityOne">
+                <label for="hangout">Hangout <br>with friends</label>
+                <img src="imgs/hangout.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="project" name="activityOne">
+                <label for="project">Do an <br>art project</label>
+                <img src="imgs/project.jpg" class="img">
+            </div>
+        </div>
+    </div>
+    <!-- lunch -->
+        <p class="question">After a couple hours of doing your prefered activity, you start to get hungry... which fast food chain do you order from?</p>
+    <div class="option">
+        <div class="container">
+            <div class="container1">
+                <input type="radio" id="chipotle" name="lunchOrder">
+                <label for="chipotle">Chipotle</label>
+                <img src="imgs/chipotle.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="panera" name="lunchOrder">
+                <label for="panera">Panera</label>
+                <img src="imgs/panera.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="panda" name="lunchOrder">
+                <label for="panda">Panda Express</label>
+                <img src="imgs/panda.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="portillos" name="lunchOrder">
+                <label for="portillos">Portillo's</label>
+                <img src="imgs/portillos.jpg" class="img">
+            </div>
+        </div>
+    </div>
+    <!-- event -->
+        <p class="question">After eating you open up your email and see that you won free tickets to an event, where are you going?</p>
+    <div class="option">
+        <div class="container">
+            <div class="container1">
+                <input type="radio" id="movie" name="eventChoice">
+                <label for="movie">A movie <br>premier</label>
+                <img src="imgs/movie.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="concert" name="eventChoice">
+                <label for="concert">Your <br>favorite <br>artist's <br>concert</label>
+                <img src="imgs/concert.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="restaurant" name="eventChoice">
+                <label for="restaurant">A testing <br>of a 3 star <br>michilin <br>restaurant</label>
+                <img src="imgs/resturant.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="park" name="eventChoice">
+                <label for="park">The grand <br>opening of<br> an amusement <br>park</label>
+                <img src="imgs/park.jpg" class="img">
+            </div>
+        </div>
+    </div>
+    <!-- sleeptime -->
+        <p class="question">You just had the best time at the event and now its time to go to sleep, what activity will you do to wind down?</p>
+    <div class="option">
+        <div class="container">
+            <div class="container1">
+                <input type="radio" id="tiktok" name="sleepTime">
+                <label for="tiktok">Watch TikTok</label>
+                <img src="imgs/tiktok.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="journal" name="sleepTime">
+                <label for="journal">Journal</label>
+                <img src="imgs/journal.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="music" name="sleepTime">
+                <label for="music">Listen to music</label>
+                <img src="imgs/music.jpg" class="img">
+            </div>
+            <div class="container1">
+                <input type="radio" id="sheep" name="sleepTime">
+                <label for="sheep">Count sheep</label>
+                <img src="imgs/sheep.jpg" class="img">
+            </div>
+        </div>
+    </div>
+    <!-- get results -->
+    <div class="reveal">
+        <a href="#answer"><button onclick="getResults()" id="button">See what trend you are!</button></a>
+    </div>
+    <div id="answer">
+        <p id="trend"></p>
+        <img id="result">
+        <p id="explanation"></p>
+    </div>
 </body>
 </html>

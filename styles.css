@@ -1,277 +1,118 @@
-/* 
-#143109 (dark green)
-#AAAE7F (sage)
-#D0D6B3 (light green)
-#F7F7F7 (white)
-#EFEFEF (light gray)
-
-or 
-#1B2021 (black)
-#51513D (brown/green)
-#A6A867 (green)
-#E3DC95 (light yellow/green)
-#E3DCC2 (beige)
-*/
-
 body {
-	margin: 0px;
-	display: flex;
-	flex-direction: column;
-	min-width: 0;
-}
-
-p {
-}
-/*---------------------*/
-/* start of top section */
-
-#topbar {
-	background-color: #AAAE7F;
-	color: #AAAE7F;
+	background-color: #D6CFCB;
 	margin: 0px;
 }
 
-#text1 {
-	margin: 0px;
-	padding: 5px;
-}
-
-#header {
+.header {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #D0D6B3;
-	padding: 1vw;
-	margin: 0px;
-}
-
-#logo {
-	object-fit: contain;
-	display: flex;
-	min-width: 0px;
-	width: 10vw;
-}
-
-#title {
-	font-family: Barriecito;
-	color: #143109;
-	font-size: 4vw;
-	margin: 0px;
-}
-
-/* menu */
-/* Dropdown Button */
-.dropbtn {
-  background-color: transparent;
-  color: #143109;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  right: 40px;
-  top: 15px;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-/*.dropdown:hover .dropbtn {background-color: #3e8e41;}*/
-
-/* end of top section */
-/*---------------------*/
-
-/*---------------------*/
-/* start of middle section */
-
-.middle {
-	display: flex;
-	/*min-width: 0;*/
-	align-items: center;
-}
-
-#mission {
-	display: flex;
-	flex-direction: column;
-	flex: 1 1 300px;
-	font-size: 1.5vw;
-	font-family: Figtree;
-	padding: 15px;
-}
-
-#homeimg {
-	object-fit: contain;
-	display: flex;
-	padding: 15px;
-	flex: 1 2 700px;
-	min-width: 0px;
-}
-
-.events-middle {
-	display: flex;
-	flex-direction: column;
-}
-
-#past {
-	display: flex;
-	/*min-width: 0;*/
-	flex-direction: column;
-}
-
-#layout {
-	display: flex;
-	background-color: #EFEFEF;
-	margin: 5px;
-}
-
-.eventsimg {
-	object-fit: contain;
-	display: flex;
-	padding: 15px;
-	flex: 1 2 700px;
-	min-width: 0px;
-}
-
-#midtitle {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	flex: 1 1 300px;
-	font-size: 1.5vw;
-	font-family: Figtree;
-	padding: 15px;
+	align-items: center;
+	background-color: #565264;
+	padding: 25px;
+	margin: 0px;
+	color: white;
+	font-family: "Henny Penny";
+	text-align: center;
 }
 
-.event-title {
-	font-size: 3vw;
-	font-family: Barriecito;
-	padding: 15px;
+.question {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #706677;
+	padding: 10px;
+	margin: 0px;
+	color: white;
+	font-family: "Henny Penny";
+	margin-bottom: 20px;
+	font-size: 20px;
+	text-align: center;
 }
 
-.leadership-middle {
+.option {
 	display: flex;
 	flex-direction: column;
 }
 
-#card-container {
+.container {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-evenly;
-	margin: 10px;
+	align-items: flex-start;
 	flex-wrap: wrap;
 }
 
-.card {
+.img {
+	object-fit: contain;
+	width: 200px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.container1 {
+	background-color: white;
+	padding: 5px;
+	margin: 10px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
+}
+
+/*
+input[type="radio"] {
+  margin: 10px;
+}
+*/
+
+label {
+	margin: 10px;
+}
+
+button {
+	padding: 20px;
+	margin: 30px;
+	font-size: 20px;
+	font-family: "Henny Penny";
+	background-color: #706677;
+	color: white;
+	border-style: outset;
+	border-color: #565264;
+}
+
+button:hover {
+	background-color: #9e8fa8;
+}
+
+.reveal {
+	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	background-color: #EFEFEF;
-	padding: 10px;
-	margin: 5px;
 }
 
-.name {
-	font-family: Barriecito;
-	padding: 3px;
-	margin: 0px;
-}
-
-.description {
-	font-family: Figtree;
-	padding: 3px;
-	margin: 0px;
-}
-
-/* end of middle section */
-/*---------------------*/
-
-/*---------------------*/
-/* start of bottom section */
-
-#footer {
+#answer {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
 	align-items: center;
-	background-color: #A6A867;
-	padding: 10px;
-	margin: 0px;
-}
-
-#contact {
-	list-style-type: none;
-	padding: 3px;
-	margin: 0px;
-	font-size: 1vw;
-	font-family: Figtree;
-}
-
-#bottombar {
-	background-color: #143109;
-	margin: 0px;
-	color: #F7F7F7;
-	text-align: center;
+	justify-content: flex-start;
 	padding: 5px;
-	font-family: Figtree;
+	margin: 20px;
 }
 
-#bottomtitle {
+#trend {
+	font-family: "Henny Penny";
+	font-size: 50px;
 	padding: 0px;
-	margin: 0px;
-	font-family: Barriecito;
-	color: #143109;
-	font-size: 3vw;
-	margin: 0px;
 }
 
-#connect {
-	padding: 0px;
-	margin: 0px;
-	font-family: Barriecito;
-	color: #143109;
-	font-size: 2vw;
-	margin: 0px;
+#result {
+	width: 300px;
 }
 
-
-.fa-instagram {
-  width: 50px;
-  text-align: center;
+#explanation {
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
 }
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-  color: white;
-}
-
-/* bottom of top section */
-/*---------------------*/
