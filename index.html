@@ -1,158 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Buzzfeed Quiz</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Phaedrus</title>
+	<link rel="stylesheet" href="styles.css">
+	<!--Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <h1>Build your perfect day and I'll tell you what 2025 trend you are</h1>
-    </div>
-    <!-- Radio buttons for programmingLanguage -->
-    <!-- breakfast -->
-    <p class="question">You just woke up from a good 9 hour sleep, which breakfast are you feasting on?</p>
-    <div class="option">
-        <div class="container">
-            <div class="container1">
-                <input type="radio" id="breakfastone" name="breakfastChoice">
-                <label for="breakfastone">Breakfast One</label>
-                <img src="imgs/breakfast1.jpg" class="img">
+	<section class="header">
+		<div class="gallery-container">
+        	<div class="gallery-images">
+            	<!-- Add your images here -->
+            	<img src="images/banner1.png" alt="Image 1" class="slide active">
+            	<img src="images/banner2.png" alt="Image 2" class="slide">
+            	<img src="images/banner3.png" alt="Image 3" class="slide">
+            	<img src="images/banner4.png" alt="Image 4" class="slide">
+            	<img src="images/banner5.png" alt="Image 3" class="slide">
+            	<img src="images/banner6.png" alt="Image 4" class="slide">
+        	</div>
+        	<div class="text-overlay">
+                <h1 id="banner-text">Phaedrus</h1>
+                <div class="banner-buttons">
+                	<a href="pages/gallery.html" target="_blank" class="banner-button1">Gallery</a>
+                	<a href="pages/submit.html" target="_blank" class="banner-button2">Submit</a>
+            	</div>
             </div>
-            <div class="container1">
-                <input type="radio" id="breakfasttwo" name="breakfastChoice">
-                <label for="breakfasttwo">Breakfast Two</label>
-                <img src="imgs/breakfast2.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="breakfastthree" name="breakfastChoice">
-                <label for="breakfastthree">Breakfast Three</label>
-                <img src="imgs/breakfast3.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="breakfastfour" name="breakfastChoice">
-                <label for="breakfastfour">Breakfast Four</label>
-                <img src="imgs/breakfast4.jpg" class="img">
-            </div>
-        </div>
-    </div>
-    <!-- first activity -->
-    <p class="question">School/work just called and you got the day off! How will you spend the morning?</p>
-    <div class="option">
-        <div class="container">
-            <div class="container1">
-                <input type="radio" id="read" name="activityOne">
-                <label for="read">Read a book</label>
-                <img src="imgs/read.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="game" name="activityOne">
-                <label for="game">Play games</label>
-                <img src="imgs/game.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="hangout" name="activityOne">
-                <label for="hangout">Hangout <br>with friends</label>
-                <img src="imgs/hangout.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="project" name="activityOne">
-                <label for="project">Do an <br>art project</label>
-                <img src="imgs/project.jpg" class="img">
-            </div>
-        </div>
-    </div>
-    <!-- lunch -->
-        <p class="question">After a couple hours of doing your prefered activity, you start to get hungry... which fast food chain do you order from?</p>
-    <div class="option">
-        <div class="container">
-            <div class="container1">
-                <input type="radio" id="chipotle" name="lunchOrder">
-                <label for="chipotle">Chipotle</label>
-                <img src="imgs/chipotle.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="panera" name="lunchOrder">
-                <label for="panera">Panera</label>
-                <img src="imgs/panera.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="panda" name="lunchOrder">
-                <label for="panda">Panda Express</label>
-                <img src="imgs/panda.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="portillos" name="lunchOrder">
-                <label for="portillos">Portillo's</label>
-                <img src="imgs/portillos.jpg" class="img">
-            </div>
-        </div>
-    </div>
-    <!-- event -->
-        <p class="question">After eating you open up your email and see that you won free tickets to an event, where are you going?</p>
-    <div class="option">
-        <div class="container">
-            <div class="container1">
-                <input type="radio" id="movie" name="eventChoice">
-                <label for="movie">A movie <br>premier</label>
-                <img src="imgs/movie.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="concert" name="eventChoice">
-                <label for="concert">Your <br>favorite <br>artist's <br>concert</label>
-                <img src="imgs/concert.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="restaurant" name="eventChoice">
-                <label for="restaurant">A testing <br>of a 3 star <br>michilin <br>restaurant</label>
-                <img src="imgs/resturant.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="park" name="eventChoice">
-                <label for="park">The grand <br>opening of<br> an amusement <br>park</label>
-                <img src="imgs/park.jpg" class="img">
-            </div>
-        </div>
-    </div>
-    <!-- sleeptime -->
-        <p class="question">You just had the best time at the event and now its time to go to sleep, what activity will you do to wind down?</p>
-    <div class="option">
-        <div class="container">
-            <div class="container1">
-                <input type="radio" id="tiktok" name="sleepTime">
-                <label for="tiktok">Watch TikTok</label>
-                <img src="imgs/tiktok.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="journal" name="sleepTime">
-                <label for="journal">Journal</label>
-                <img src="imgs/journal.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="music" name="sleepTime">
-                <label for="music">Listen to music</label>
-                <img src="imgs/music.jpg" class="img">
-            </div>
-            <div class="container1">
-                <input type="radio" id="sheep" name="sleepTime">
-                <label for="sheep">Count sheep</label>
-                <img src="imgs/sheep.jpg" class="img">
-            </div>
-        </div>
-    </div>
-    <!-- get results -->
-    <div class="reveal">
-        <a href="#answer"><button onclick="getResults()" id="button">See what trend you are!</button></a>
-    </div>
-    <div id="answer">
-        <p id="trend"></p>
-        <img id="result">
-        <p id="explanation"></p>
-    </div>
+        <!-- Navigation buttons -->
+        	<a class="nav-btn prev" onclick="plusSlides(-1)">&#10094;</a>
+        	<a class="nav-btn next" onclick="plusSlides(1)">&#10095;</a>
+    	</div>
+		<div id="navigation">
+			<ul id="nav-bar">
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li><a href="pages/gallery.html" target="_blank">Gallery</a></li>
+				<li><a href="pages/leadership.html" target="_blank">Leadership</a></li>
+				<li><a href="pages/spotlight.html" target="_blank">Spotlight</a></li>
+				<li><a href="pages/submit.html" target="_blank">Submit</a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="middle">
+		<div id="about">
+			<div id="about-inner">
+				<h1>About Phaedrus:</h1>
+				<h2>Phaedrus is focused exclusively on art and writing, bringing together visual works and creative texts in one space. It showcases artists and writers through features, essays, poetry, and experimental pieces, creating a dialogue between image and word.</h2>
+				<p>Phaedrus is currently ran by four EICs: Delilah Davis, Ava Lin, B Hirsch, and Wallace Davis. With the help of Ms. Abood and Ms. Silva, Phaedrus is commited to producing a high quality magazine for the student body. There are many ways to get involved with Phaedrus such as joining the editorial board or submitting works to the magazine. Whether it is something you made in your free time or in an art class, Phaedrus will take it to display the creativity of Parker students.</p>
+			</div>
+		</div>
+		<div id="submit-content">
+			<h1>What to sumbit to Phaedrus:</h1>
+			<div id="content-container">
+				<div>
+					<ul>
+						<li>Paintings (watercolor, oil, acrylic, etc)</li>
+						<li>Drawings (sketches, doodles, finished pieces)</li>
+						<li>Photography</li>
+						<li>Sculptures (clay, metal, wood, etc)</li>
+						<li>Fashion/Clothing</li>
+						<li>Ceramics</li>
+						<li>Digital Art</li>
+						<li>Poems</li>
+						<li>Short Stories</li>
+					</ul>
+				</div>
+				<img src="images/collage.png">
+			</div>
+		</div>
+	
+	</section>
+	
+	<section class="footer">
+		<div id="bottom">
+			<h1><a href="pages/submit.html" target="_blank">Submit to Phaedrus today!<a></h1>
+			<div id="contact">
+				<p>phaedrus@fwparker.org</p>
+				<div id="icons">
+					<a href="https://www.instagram.com/phaedrusmagazine?igsh=Nng2ZGxoN210dHVz" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a><i class="fa fa-envelope"></i></a>
+				</div>
+			</div>
+		</div>
+		<div id="bottom-bar">
+			<p>© 2013 Francis W. Parker Phaedrus | Chicago, IL</p>
+		</div>
+	</section>
+	<script src="script.js"></script>
 </body>
 </html>
